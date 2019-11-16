@@ -2,8 +2,12 @@
 
 from odoo import models, fields, api
 
-# class openacademy(models.Model):
-#     _name = 'openacademy.openacademy'
+class openacademy(models.Model):
+    _name = 'openacademy.openacademy'
+    _description = "OpenAcademy Courses"
+
+    name = fields.Char(string="Title", required=True)
+    description = fields.Text()
 
 #     name = fields.Char()
 #     value = fields.Integer()
