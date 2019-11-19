@@ -89,7 +89,7 @@ class Session(models.Model):
             }
         if self.seats < len(self.attendee_ids):
             return {
-                'warning': {s
+                'warning': {
                     'title': "Too many attendees",
                     'message': "Increase seats or remove excess attendees",
                 },
